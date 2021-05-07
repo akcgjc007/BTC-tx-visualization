@@ -14,7 +14,7 @@ df = pd.read_csv(
 for i in df.index:
     df.at[i, "time"] = datetime.fromtimestamp(df.at[i, "time"])
 
-df = df[:1000]
+df = df[:200]
 
 # n = max(max(df.source), max(df.target))+1
 # adjList = [set() for i in range(n)]
